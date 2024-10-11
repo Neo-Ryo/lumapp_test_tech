@@ -1,0 +1,29 @@
+{
+  "name": "ts-backend-tech-test",
+  "version": "1.0.0",
+  "description": "Lumapps TypeScript Backend Technical Test",
+  "author": "Lumapps",
+  "license": "UNLICENSED",
+  "private": true,
+  "homepage": "https://github.com/lumapps/ts-backend-tech-test#readme",
+  "bugs": {
+    "url": "https://github.com/lumapps/ts-backend-tech-test/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumapps/ts-backend-tech-test.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "NODE_OPTIONS='-r ts-node/register' node ./goban.ts",
+    "test":  "NODE_OPTIONS='-r ts-node/register' node --test ./*.spec.ts",
+    "test-only":  "NODE_OPTIONS='-r ts-node/register' node --test --test-only ./*.spec.ts"
+  },
+  "devDependencies": {
+    "@types/node": "22.7.5",
+    "ts-node": "10.9.2",
+    "typescript": "5.6.3"
+  }
+}
